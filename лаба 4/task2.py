@@ -1,4 +1,3 @@
-# TODO импортировать необходимые молули
 import csv
 import json
 
@@ -10,13 +9,13 @@ def task() -> None:
         reader = csv.DictReader(f)
         data = list(reader)
 
-    # TODO считать содержимое csv файла
+    # TODO read file
         with open(OUTPUT_FILENAME, 'w') as f:
             json.dump(data, f, indent=4)
-    # TODO Сериализовать в файл с отступами равными 4
+    # TODO otstupi
 
 if __name__ == '__main__':
-    # Нужно для проверки
+    # proverka
     task()
     with open(OUTPUT_FILENAME) as f:
         for line in f:
